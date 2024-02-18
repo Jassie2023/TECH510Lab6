@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 st.set_page_config(
-    page_title="CV Feedback",
+    page_title="AI Resume Feedback Chat Bot",
     page_icon="🦙",
     layout="centered",
     initial_sidebar_state="auto",
@@ -50,21 +50,21 @@ if uploaded_file:
 
     if "initial_analysis_triggered" not in st.session_state:
         st.session_state.initial_analysis_triggered = True  
-        initial_prompt = "Analyze my resume file and provide professional feedback with Key and well-structured points."
+        initial_prompt = "Analyze my resume file and provide feedback with bullet and well-structured points."
         st.session_state.messages = [{"role": "user", "content": initial_prompt}]
         initial_response = st.session_state.chat_engine.stream_chat(initial_prompt)
         if initial_response and initial_response.response:
             st.session_state.messages.append({"role": "assistant", "content": initial_response.response})
 
 if "messages" not in st.session_state:
-    st.session_state.messages = [{"role": "assistant", "content": "Welcome! Please upload your resume or cover letter to start the analysis."}]
+    st.session_state.messages = [{"role": "assistant", "content": "Upload your CV to start."}]
 
 if prompt := st.chat_input("Your question"):
     st.session_state.messages.append({"role": "user", "content": prompt})
     
     response = st.session_state.chat_engine.stream_chat(prompt)
     if response and response.response:
-        st.session_state.messages.append({"role": "assistant", "content": response.response})
+        st.session_state.messages.append({"role": "assistant", "content": response. response})
 
 
 for message in st.session_state.messages:
