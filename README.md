@@ -1,4 +1,4 @@
-# Lab 6 - Chat with PDF
+# Lab 6 - AI CV feedback
 
 Jassie
 
