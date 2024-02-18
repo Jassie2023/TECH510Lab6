@@ -1,4 +1,4 @@
-# Lab 6 - AI CV feedback
+# Lab 6 - AI Resume Feedback Chat Bot
 
 Jassie
 
