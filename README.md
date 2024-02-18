@@ -12,6 +12,9 @@ This practice provides professional feedback on resumes by leveraging the power 
 4. `cp .env.sample .env`
 4. Change the `.env` file to match your environment
 5. `streamlit run app.py`
+6. Download TestCV-Jassie.pdf
+7. Drag the file to the website
+
 
 ## Components
 app.py: The main Streamlit application script.
