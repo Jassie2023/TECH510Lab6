@@ -17,7 +17,6 @@ st.set_page_config(
     menu_items=None,
 )
 
-
 if "messages" not in st.session_state.keys():  # Initialize the chat messages history
     st.session_state.messages = [
         {"role": "assistant", "content": "Hi, You can upload your CV and ask me a question about your that!"}
