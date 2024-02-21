@@ -3,4 +3,4 @@ openai
 llama-index
 nltk
 pypdf
-dotenv
+python-dotenv
